@@ -1,0 +1,7 @@
+.custom-file-control:lang(pt)::after {
+    content: "Selecione um arquivo...";
+}
+
+.custom-file-control:lang(pt)::before {
+    content: "Pesquisar";
+}

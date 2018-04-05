@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+    <head>
+        <!-- Definições -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Título -->
+        <title>Sincronização</title>
+
+        <!-- Bootstrap V4 - Beta -->
+        <link rel="stylesheet" href="webroot/css/bootstrap.min.css">
+        <script src="webroot/js/jquery-3.2.1.min.js"></script>
+        <script src="webroot/js/tether.js"></script>
+        <script src="webroot/js/bootstrap.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="webroot/css/global.css">
+
+        <!-- JS -->
+        <script src="webroot/js/links.js"></script>
+        <script src="webroot/js/form.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div style="height: 40px;"></div>
+            <form id="formulario">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-sm-12 offset-lg-5 offset-md-3">
+                        <label for="venda_id" class="label">Id da Venda</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-sm-12 offset-lg-5 offset-md-3">
+                        <input class="form-control" type="number" value="" id="venda_id">
+                    </div>
+                </div>
+                <div style="height: 20px;"></div>
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-sm-12 offset-lg-5 offset-md-3">
+                        <button type="button" id="BTNsync" class="btn btn-primary">Sincronizar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Modal Log -->
+        <div class="modal fade" id="myModalLog" role="dialog" data-backdrop="static">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Ops!</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div style="height: 40px;"></div>
+                            <div class="alert alert-danger alertLog">
+                                <strong id="log">
+                                </strong>
+                            </div>
+                            <div style="height: 20px;"></div>
+                        </div>
+                    </div>
+                </div> <!-- /*Modal content-->
+            </div>
+        </div> <!-- /*Modal Log -->
+
+        <!-- Modal Success -->
+        <div class="modal fade" id="myModalSuccess" role="dialog" data-backdrop="static">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close exit" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Legal!</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div style="height: 40px;"></div>
+                            <div class="alert alert-success alertSuccess">
+                                <strong id="logSuccess">
+                                </strong>
+                            </div>
+                            <div style="height: 20px;"></div>
+                        </div>
+                    </div>
+                </div> <!-- /*Modal content-->
+            </div>
+        </div> <!-- /*Modal Log -->
+
+    </body>
+</html>
